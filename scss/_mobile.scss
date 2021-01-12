@@ -27,7 +27,7 @@ $size: 20px;
 // Smartphones
 @include mediaSm {
   main {
-    grid-template-columns: 1fr;
+    height: 70vh;
   }
   nav.desktop {
     display: none !important;
@@ -37,13 +37,25 @@ $size: 20px;
     text-align: center;
   }
 
-  .mobile-menu {
+  .main-image {
+    display: none;
+  }
+
+  .menu-desktop {
+    display: none;
+  }
+
+  .menu-btn {
     display: inline-block;
     position: absolute;
     z-index: 3;
     cursor: pointer;
     right: 35px;
     top: 45px;
+
+    &.hide {
+      visibility: hidden;
+    }
 
     .top {
       height: $size;

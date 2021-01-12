@@ -5,6 +5,10 @@ $secondary-color: #414c6a;
 $heading-color: #707070;
 $background-light: #e8e8e8;
 
+@mixin easeOut {
+  transition: all 0.5s ease-out;
+}
+
 // Media Query Mixins
 @mixin mediaSm {
   @media screen and (max-width: 500px) {
