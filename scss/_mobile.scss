@@ -58,11 +58,9 @@ $size: 20px;
     }
 
     .top {
-      height: $size;
-      width: $size * 2;
       background: $primary-color;
-      border-top-left-radius: $size * 2;
-      border-top-right-radius: $size * 2;
+      margin: 3px 0;
+      height: 5px;
     }
 
     .middle {
